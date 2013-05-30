@@ -1,0 +1,61 @@
+/* CSS */
+
+#fullscreen{
+	width:100%;
+	height:100%;
+	position:absolute;
+	background:#00aafe;
+	top:0;
+	left:0;
+	z-index:999999;
+}
+.salmon {
+	height:122;
+	width:200px;
+	position: absolute;
+	z-index:6000;
+	bottom:-200px;
+	left: 800px;
+	-webkit-animation:fish 2s ease-in-out infinite;
+}
+#salmonbody {
+	height:122px;
+	width:200px;
+	background: url(../images/salmonbody.png) no-repeat;
+	position:relative;
+}
+#salmontail {
+	height:122px;
+	width:200px;
+	background: url(../images/salmontail.png) no-repeat;
+	position:absolute;
+	top:-2px;
+	left:2px;
+	-webkit-animation: tail 0.3s infinite ;
+}
+
+@-webkit-keyframes fish {
+	0%{left:-200px; bottom:-200px;}
+	50%{left: 400px; bottom:300px; -webkit-transform:rotate(40deg);}
+	75%{-webkit-transform:rotate(-280deg);}
+	100%{left:900px; bottom:-200px;-webkit-transform: rotate(-360deg);}
+}
+@-webkit-keyframes tail{
+	0%{top:-5px;}
+	25%{top:0px;}
+	75%{top:5px;}
+	100%{top:-5px;}
+}
+
+#mountain {
+	width:100%;
+	height:600px;
+	position:absolute;
+	z-index: 4000;
+	bottom:0px;
+	left:0px;
+	background-image:url(../images/mountainStream.png);
+	background-repeat:no-repeat;
+	background-size: 100% 600px;
+}
+
