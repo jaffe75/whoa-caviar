@@ -33,7 +33,6 @@
 	left:2px;
 	-webkit-animation: tail 0.3s infinite ;
 }
-
 @-webkit-keyframes fish {
 	0%{left:-200px; bottom:-200px;}
 	50%{left: 400px; bottom:300px; -webkit-transform:rotate(40deg);}
@@ -46,7 +45,6 @@
 	75%{top:5px;}
 	100%{top:-5px;}
 }
-
 #mountain {
 	width:100%;
 	height:600px;
@@ -58,4 +56,28 @@
 	background-repeat:no-repeat;
 	background-size: 100% 600px;
 }
+
+.egg {
+	height:100px;
+	width:100px;
+	background-image: url(../images/egg.png);
+	background-repeat:no-repeat;
+	position:absolute;
+	z-index:7000;
+	left: 400px; 
+	bottom:300px;
+	-webkit-transition: opacity 1s ease-out;
+
+}	
+
+.egg.splat {
+	background-image:url(../images/splat.png);
+	opacity:0;
+
+}
+
+
+
+
+
 
