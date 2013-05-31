@@ -25,14 +25,14 @@ License: A "Slug" license name e.g. GPL2
  add_action( 'wp_enqueue_scripts', 'prefix_add_my_stylesheet' );
 function prefix_add_my_stylesheet() {
     // Respects SSL, Style.css is relative to the current file
-    wp_register_style( 'prefix-style', plugins_url('/css/global.css', __FILE__) );
+    wp_register_style( 'prefix-style', plugins_url('/css/fish.css', __FILE__) );
     wp_enqueue_style( 'prefix-style' );
 }
 
 function my_fishscripts_method() {
     wp_enqueue_script(
         'newscript',
-        plugins_url( '/js/script.js' , __FILE__ ),
+        plugins_url( '/js/fish.js' , __FILE__ ),
         array( 'jquery' )
     );
 }
