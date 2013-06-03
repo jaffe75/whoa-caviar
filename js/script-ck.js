@@ -1,1 +1,0 @@
-$(function(){$("body").prepend('<div id="fullscreen"><div class="salmon"><div id="salmonbody"><div id="salmontail"></div></div></div><div id="mountain"></div></div>');$(".salmon").before('<div class="egg"></div>');var e=$(".egg");e.hide();e.delay(1e3).show(function(){$(this).fadeIn().delay(3e3).addClass("splat")})});
