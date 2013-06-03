@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Whoa, Caviar!!
-Description: A Mountain, A Stream, A Fish... potentailly caviar...
+Description: A Mountain, A Stream, A Fish... Potentailly caviar...
 Version: .01
 Author: Jaffe75
 Author URI: jaff.es
@@ -23,6 +23,7 @@ License: A "Slug" license name e.g. GPL2
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
  add_action( 'wp_enqueue_scripts', 'prefix_add_my_stylesheet' );
+
 function prefix_add_my_stylesheet() {
     // Respects SSL, Style.css is relative to the current file
     wp_register_style( 'prefix-style', plugins_url('/css/fish.css', __FILE__) );
@@ -32,7 +33,7 @@ function prefix_add_my_stylesheet() {
 function my_fishscripts_method() {
     wp_enqueue_script(
         'newscript',
-        plugins_url( '/js/fish.js' , __FILE__ ),
+        plugins_url( '/js/fish-ck.js' , __FILE__ ),
         array( 'jquery' )
     );
 }

@@ -1,2 +1,2 @@
 // Javascript file
-$(document).ready(function(){});
+jQuery(document).ready(function(e){e("body").prepend('<div id="fullscreen"><div class="salmon"><div id="salmonbody"><div id="salmontail"></div></div></div><div id="mountain"></div></div>');e(".salmon").before('<div class="egg"></div>');var t=e(".egg");t.hide();t.delay(1e3).show(function(){e(this).fadeIn().delay(3e3).addClass("splat")})});
