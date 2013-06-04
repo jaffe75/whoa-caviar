@@ -1,2 +1,6 @@
+.DS_Store
 scss/
 fish.js
+.sass-cache/
+codekit-config.json
+config.rb
