@@ -2,17 +2,22 @@
 /**************************/
 /* THIS ALL WILL NEED TO BE PUT INTO THE SCSS FISH FILE TO USE COMPASS AND SASS
 /**************************/
-/* line 12, ../scss/fish.scss */
+/* line 9, ../scss/fish.scss */
 #fullscreen {
   width: 100%;
   height: 100%;
   position: absolute;
-  background: #00aafe;
   top: 0;
   left: 0;
   z-index: 999999; }
 
-/* line 21, ../scss/fish.scss */
+/* line 19, ../scss/fish.scss */
+canvas {
+  height: 100%;
+  width: 100%;
+  border: solid 1px; }
+
+/* line 24, ../scss/fish.scss */
 .salmon {
   height: 122;
   width: 200px;
@@ -22,14 +27,14 @@
   left: 800px;
   -webkit-animation: fish 2s ease-in-out infinite; }
 
-/* line 30, ../scss/fish.scss */
+/* line 33, ../scss/fish.scss */
 #salmonbody {
   height: 122px;
   width: 200px;
   background: url(../images/salmonbody.png) no-repeat;
   position: relative; }
 
-/* line 36, ../scss/fish.scss */
+/* line 39, ../scss/fish.scss */
 #salmontail {
   height: 122px;
   width: 200px;
@@ -40,45 +45,45 @@
   -webkit-animation: tail 0.3s infinite; }
 
 @-webkit-keyframes fish {
-  /* line 46, ../scss/fish.scss */
+  /* line 49, ../scss/fish.scss */
   0% {
     left: -200px;
     bottom: -200px; }
 
-  /* line 47, ../scss/fish.scss */
+  /* line 50, ../scss/fish.scss */
   50% {
     left: 400px;
     bottom: 300px;
     -webkit-transform: rotate(40deg); }
 
-  /* line 48, ../scss/fish.scss */
+  /* line 51, ../scss/fish.scss */
   75% {
     -webkit-transform: rotate(-280deg); }
 
-  /* line 49, ../scss/fish.scss */
+  /* line 52, ../scss/fish.scss */
   100% {
     left: 900px;
     bottom: -200px;
     -webkit-transform: rotate(-360deg); } }
 
 @-webkit-keyframes tail {
-  /* line 52, ../scss/fish.scss */
+  /* line 55, ../scss/fish.scss */
   0% {
     top: -5px; }
 
-  /* line 53, ../scss/fish.scss */
+  /* line 56, ../scss/fish.scss */
   25% {
     top: 0px; }
 
-  /* line 54, ../scss/fish.scss */
+  /* line 57, ../scss/fish.scss */
   75% {
     top: 5px; }
 
-  /* line 55, ../scss/fish.scss */
+  /* line 58, ../scss/fish.scss */
   100% {
     top: -5px; } }
 
-/* line 57, ../scss/fish.scss */
+/* line 60, ../scss/fish.scss */
 #mountain {
   width: 100%;
   height: 600px;
@@ -90,7 +95,7 @@
   background-repeat: no-repeat;
   background-size: 100% 600px; }
 
-/* line 69, ../scss/fish.scss */
+/* line 72, ../scss/fish.scss */
 .egg {
   height: 100px;
   width: 100px;
@@ -102,7 +107,7 @@
   bottom: 300px;
   -webkit-transition: opacity 1s ease-out; }
 
-/* line 82, ../scss/fish.scss */
+/* line 85, ../scss/fish.scss */
 .egg.splat {
   background-image: url(../images/splat.png);
   opacity: 0; }
