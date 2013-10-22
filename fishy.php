@@ -31,6 +31,7 @@ function prefix_add_my_stylesheet() {
 }
 
 function my_fishscripts_method() {
+    wp_enqueue_script('hand', plugins_url('/js/hand-1.0.13.js', __FILE__), array('jquery'));
     wp_enqueue_script(
         'newscript',
         plugins_url( '/js/fish-ck.js' , __FILE__ ),

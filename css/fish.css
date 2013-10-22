@@ -11,13 +11,15 @@
   left: 0;
   z-index: 999999; }
 
-/* line 19, ../scss/fish.scss */
+/* line 18, ../scss/fish.scss */
 canvas {
   height: 100%;
   width: 100%;
-  border: solid 1px; }
+  border: solid 1px;
+  -ms-touch-action: none;
+  touch-action: none; }
 
-/* line 24, ../scss/fish.scss */
+/* line 26, ../scss/fish.scss */
 .salmon {
   height: 122;
   width: 200px;
@@ -27,14 +29,14 @@ canvas {
   left: 800px;
   -webkit-animation: fish 2s ease-in-out infinite; }
 
-/* line 33, ../scss/fish.scss */
+/* line 35, ../scss/fish.scss */
 #salmonbody {
   height: 122px;
   width: 200px;
   background: url(../images/salmonbody.png) no-repeat;
   position: relative; }
 
-/* line 39, ../scss/fish.scss */
+/* line 41, ../scss/fish.scss */
 #salmontail {
   height: 122px;
   width: 200px;
@@ -45,45 +47,45 @@ canvas {
   -webkit-animation: tail 0.3s infinite; }
 
 @-webkit-keyframes fish {
-  /* line 49, ../scss/fish.scss */
+  /* line 51, ../scss/fish.scss */
   0% {
     left: -200px;
     bottom: -200px; }
 
-  /* line 50, ../scss/fish.scss */
+  /* line 52, ../scss/fish.scss */
   50% {
     left: 400px;
     bottom: 300px;
     -webkit-transform: rotate(40deg); }
 
-  /* line 51, ../scss/fish.scss */
+  /* line 53, ../scss/fish.scss */
   75% {
     -webkit-transform: rotate(-280deg); }
 
-  /* line 52, ../scss/fish.scss */
+  /* line 54, ../scss/fish.scss */
   100% {
     left: 900px;
     bottom: -200px;
     -webkit-transform: rotate(-360deg); } }
 
 @-webkit-keyframes tail {
-  /* line 55, ../scss/fish.scss */
+  /* line 57, ../scss/fish.scss */
   0% {
     top: -5px; }
 
-  /* line 56, ../scss/fish.scss */
+  /* line 58, ../scss/fish.scss */
   25% {
     top: 0px; }
 
-  /* line 57, ../scss/fish.scss */
+  /* line 59, ../scss/fish.scss */
   75% {
     top: 5px; }
 
-  /* line 58, ../scss/fish.scss */
+  /* line 60, ../scss/fish.scss */
   100% {
     top: -5px; } }
 
-/* line 60, ../scss/fish.scss */
+/* line 62, ../scss/fish.scss */
 #mountain {
   width: 100%;
   height: 600px;
@@ -95,7 +97,7 @@ canvas {
   background-repeat: no-repeat;
   background-size: 100% 600px; }
 
-/* line 72, ../scss/fish.scss */
+/* line 74, ../scss/fish.scss */
 .egg {
   height: 100px;
   width: 100px;
@@ -107,7 +109,7 @@ canvas {
   bottom: 300px;
   -webkit-transition: opacity 1s ease-out; }
 
-/* line 85, ../scss/fish.scss */
+/* line 87, ../scss/fish.scss */
 .egg.splat {
   background-image: url(../images/splat.png);
   opacity: 0; }
