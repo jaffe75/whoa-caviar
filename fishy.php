@@ -2,12 +2,12 @@
 /*
 Plugin Name: Whoa, Caviar!!
 Description: A Mountain, A Stream, A Fish... potentailly caviar...
-Version: .01
+Version: 0.0.1
 Author: Jaffe75
 Author URI: jaff.es
 License: A "Slug" license name e.g. GPL2
 */
-/*  Copyright YEAR  PLUGIN_AUTHOR_NAME  (email : PLUGIN AUTHOR EMAIL)
+/*  Copyright 2013  Jaffe  (email : jaffe75@gmail.com)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License, version 2, as 
